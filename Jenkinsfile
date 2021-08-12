@@ -8,7 +8,7 @@ pipeline{
 
             steps {
                 cucumber buildStatus: "UNSTABLE",
-                    fileIncludePattern: "**/cucumber.json",
+                    fileIncludePattern: "**/cucumber-reports/cucumber.json",
                     jsonReportDirectory: 'target'
 
             }
